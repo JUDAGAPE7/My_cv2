@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan Gachancipa" />
+    <meta name="description" content="no more than 165 characters" />
+    <meta name="keywords" content="my cv, web development presetation " />
+    <meta name="theme-color" content="#eee" />
+    <!---- iconos -->
+
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets//css/style.css" />
+    
+    
+
+    <script type="module" src="/assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "xMBOZf0tmqEJsPfaE",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar grid--container flex--container">
+        <a class="navbar__logo flex--container" href="#"
+          ><i class='bx bxs-speaker' ></i></i>Juan Gachancipa</a
+        >
+        <div id="nav" class="navbar__menu">
+          <a href="#close"
+            ><i class="bx bx-x btn__close navbar__icon flex--container"></i
+          ></a>
+
+          <ul class="navbar__list flex--container">
+            <li class="navbar__item">
+              <a class="navbar__link active" href="#home">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#about">About Me</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#skills">Skills</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#projects">Portfolio</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__toggles flex--container">
+          <div class="navbar__toggle--darkmode flex--container">
+            <input
+              type="checkbox"
+              name="color-scheme"
+              id="darkmode-toggle"
+              class="navbar__toggle--darkmode-input"
+            />
+            <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+              <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+              <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+            </label>
+          </div>
+          <div class="navbar__toggle--language flex--container">
+            <input
+              type="checkbox"
+              id="language-toggle"
+              class="navbar__toggle--language-input"
+            />
+            <label
+              for="language-toggle"
+              class="navbar__toggle--language-label"
+            ></label>
+          </div>
+        </div>
+        <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home">
+        <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+        <i
+          class="bx bxl-javascript home__layer home__layer--2"
+          data-speed="5"
+        ></i>
+        <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+        <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+        <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+        <i
+          class="bx bxl-tailwind-css home__layer home__layer--6"
+          data-speed="-2"
+        ></i>
+        <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+        <i
+          class="bx bxl-typescript home__layer home__layer--8"
+          data-speed="-2"
+        ></i>
+        <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+        <i
+          class="bx bxl-graphql home__layer home__layer--10"
+          data-speed="-7"
+        ></i>
+        <i
+          class="bx bx-code-alt home__layer home__layer--11"
+          data-speed="-5"
+        ></i>
+        <div class="home__container grid--container">
+          <div class="home__image">
+            <img
+            src="assets/img/profile.jpg"
+            alt="profile photo"
+            title="Juan Gachancipa"
+          />
+          </div>
+          <ul class="home__social flex--container">
+            <li class="home__social-item">
+              <a
+                class="home__social-link"
+                href="https://www.linkedin.com/in/juan-gachancip%C3%A1-42284516a/"
+                target="_blank"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </li>
+            <li class="home__social-item">
+              <a
+                class="home__social-link"
+                href="https://wa.me/+573204578187?text=mensaje"
+                target="_blank"
+                ><i class="bx bxl-whatsapp"></i
+              ></a>
+            </li>
+            <li class="home__social-item">
+              <a
+                class="home__social-link"
+                href="https://github.com/JUDAGAPE7"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+            <li class="home__social-item">
+              <a
+                class="home__social-link"
+                href="mailto:juandagacha@gmail.com"
+                target="_blank"
+                ><i class="bx bx-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="home__info">
+            <h1 class="home__title">Hey, I am Juan</h1>
+            <p class="home__description">
+                I am a web developer with experience in creating functional and engaging digital experiences. My approach is based on solid technical skills and a deep understanding of the latest trends in design and user experience "Mobile first" & "desktop First". I work with a variety of technologies, from HTML, CSS and JavaScript to frameworks like React and Angular. I excel at translating client needs into effective web solutions in both English and Spanish, collaborating closely to ensure excellent results.
+            </p>
+          </div>
+          <div class="home__buttons">
+            <a
+              class="btn btn--primary"
+              type="button"
+              download="my_cv"
+              rel="nonrefwrrwr nofollow"
+            >
+              Download cv
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about section">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__container grid--container">
+          <p class="about__Description">
+            I am passionate about learning and personal growth. I am always looking for new ways to challenge myself and expand my horizons. myself and expand my horizons. I consider myself curious and creative, I enjoy exploring different fields of knowledge and looking for innovative solutions to the innovative solutions to the problems I encounter. In addition, I value interpersonal value interpersonal relationships and enjoy connecting with others, either through other people, whether through meaningful conversations.
+          </p>
+          <div class="about__cards flex--container">
+            <!--Card 1 -->
+            <div class="about__card">
+              <img
+                class="about__card--img"
+                src="/assets/img/me_1.jpeg"
+                alt="Laborando como ingeniero"
+                title="Laborando como ingeniero"
+              />
+            </div>
+            <!--Card 2 -->
+            <div class="about__card">
+              <img
+                class="about__card--img"
+                src="/assets/img/me_2.jpeg"
+                alt="Laborando como diseñador"
+                title="Laborando como diseñador"
+              />
+            </div>
+            <!--Card 3 -->
+            <div class="about__card">
+              <img
+                class="about__card--img"
+                src="/assets/img/me_3.jpeg"
+                alt="Trabajando en equipo"
+                title="rabajando en equipo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills section">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills__container grid--container">
+          <p class="skills__description flex--container"></p>
+
+          <div class="skills__wrapper flex--container">
+            <div class="skills__cards flex--container">
+              <!--Card 1 -->
+              <details class="skills__cards-container" name="moreInfo" open>
+                <summary class="skills__cards-title flex--container">
+                  <i class="bx bxl-html5 flex--container"></i>
+                </summary>
+                <div class="skills__card-container">
+                  <h3 class="skills__card-title">HTML</h3>
+
+                  <p class="skills__card-description">
+                    I possess solid HTML skills, highlighting my ability to use semantic markup and a wide variety of tags and attributes to structure and format web content. In addition, I have experience in creating interactive forms, integrating multimedia content, and managing links and hyperlinks. I am also proficient in creating and designing tables and lists, as well as integrating external content and using meta tags for SEO optimization. Finally, I make sure to validate my HTML code using appropriate tools to ensure the quality and compatibility of the code. to ensure quality and compatibility with different browsers. different browsers.
+                  </p>
+                </div>
+              </details>
+              <!--Card 2 -->
+              <details class="skills__cards-container" name="moreInfo">
+                <summary class="skills__cards-title flex--container">
+                  <i class="bx bxl-css3 flex--container"></i>
+                </summary>
+                <div class="skills__card-container">
+                  <h3 class="skills__card-title">CSS3</h3>
+
+                  <p class="skills__card-description">
+                    My CSS skills are solid, encompassing the ability to generate attractive and adaptable designs through the application of style rules and cascading. I am experienced in the effective use of selectors, properties and values to format HTML content and enhance its visual aesthetics. In addition, I am proficient in the management of boxes and box models, as well as the implementation of flexbox and grid for the creation of versatile and complex layouts. I am also versed in advanced techniques such as animations, transformations and transitions, which allow adding dynamism and add dynamism and interactivity to web pages in a readable way. readable form.
+                  </p>
+                </div>
+              </details>
+              <!--Card 3 -->
+              <details class="skills__cards-container" name="moreInfo">
+                <summary class="skills__cards-title flex--container">
+                  <i class="bx bxl-javascript flex--container"></i>
+                </summary>
+                <div class="skills__card-container">
+                  <h3 class="skills__card-title">Javascript</h3>
+
+                  <p class="skills__card-description">
+                    I have the ability to create interactive and dynamic functionalities in web pages. I have experience in manipulating the DOM to modify the structure and content of a page dynamically, as well as in handling events to respond to user actions. I am also proficient in the use of functions, objects and methods to encapsulate the methods to encapsulate programming logic and facilitate code maintenance, as well, I strive to follow coding best practices and maintain a clean and modularized JavaScript code. clean and modularized JavaScript code
+                  </p>
+                </div>
+              </details>
+              <!--Card 4 -->
+              <details class="skills__cards-container" name="moreInfo">
+                <summary class="skills__cards-title flex--container">
+                  <i class="bx bxl-react flex--container"></i>
+                </summary>
+                <div class="skills__card-container">
+                  <h3 class="skills__card-title">React</h3>
+
+                  <p class="skills__card-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
+                    voluptatum officiis repellendus beatae consectetur. In,
+                    provident excepturi? Ratione doloribus consequuntur sit
+                    officia cupiditate.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="skills__tags flex--container">
+            <h3 class="skills__tags-title">Soft Skills</h3>
+            <div class="skills__tags-container flex--container">
+              <span class="skills__tag">Responsible</span>
+              <span class="skills__tag">Teamwork</span>
+              <span class="skills__tag">Creative</span>
+              <span class="skills__tag">Punctual</span>
+              <span class="skills__tag">Proactive</span>
+              <span class="skills__tag">self-taught</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects section">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__container grid--container">
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img
+                src="/assets/img/project1.jpg"
+                  alt="project 1"
+                  title="Ecommerce Vanilla"
+                />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Project 1</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                     DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    CODE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img
+                src="/assets/img/project2.png"
+                  alt="project 1"
+                  title="Consumiendo API Pokemon con React"
+                />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Project 2</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    CODE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img
+                src="/assets/img/project3.jpg"
+                  alt="project 1"
+                  title="CRUD con React"
+                />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">Project 3</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    CODE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__project">
+            <div class="projects__inner grid--container">
+              <div class="projects__image">
+                <img
+                src="/assets/img/project4.png"
+                  alt="project 1"
+                  title="Aplicación del tiempo con React"
+                />
+              </div>
+
+              <div class="projects__info">
+                <h3 class="projects__name">projects 4</h3>
+                <p class="projects__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="projects__buttons">
+                  <button class="btn projects__button" type="button">
+                    DEMO
+                  </button>
+                  <button class="btn projects__button" type="button">
+                    CODE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <h2 class="section__title">Contact</h2>
+
+        <div class="contact__container grid--container">
+          <div class="contact__info">
+            <h3 class="contact__info-title">Contact Info</h3>
+            <p class="contact__info-description">
+              Just in case you needs, here I will left my contact info or you could leave a message to make I get in contact with you.
+            </p>
+
+            <address class="contact__info-data">
+              <div class="contact__info-item">
+                <i class="bx bxl-whatsapp"></i>
+
+                <span class="contact__info-number">
+                  <a
+                    href="https://wa.me/573204578187?text=Tu%20Mensaje%20De%20Texto"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                    >Enviar mensaje a WhatsApp</a
+                  >
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bx-phone"></i>
+
+                <span class="contact__info-number">
+                  <a
+                    href="tel:1-234-567-8910"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                  >
+                    +57 320 457 8187
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bxs-envelope"></i>
+
+                <span class="contact__info-mail">
+                  <a
+                    id="mail"
+                    href="mailto:juandagacha@gmail.com"
+                    target="_blank"
+                    rel="noreferrer nofollow"
+                  >
+                    juandagacha@gmail.com
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact__info-item">
+                <i class="bx bxs-map"></i>
+
+                <span class="contact__info-map">
+                  Cra 82 A # 6B - 74 Bogotá, Colombia.
+                </span>
+              </div>
+            </address>
+          </div>
+          <div class="contact__form">
+            <h3 class="contact__form-title">Send Message</h3>
+            <form id="form" class="contact__form-container">
+              <div class="contact__form-group">
+                <label for="name" class="contact__form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="email" class="contact__form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="subject" class="contact__form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+              <dialog id="modal">
+                Form sucsesfully send!
+                <button type="reset" id="btn_close-modal">Cerrar</button>
+              </dialog>
+
+              <button type="submit" class="btn contact__form-button">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container grid--container">
+        <div class="footer__info">
+          <h3 class="footer__title">Juan Gachancipa</h3>
+          <p class="footer__description">
+            I am a web developer, I am passionate about technology and programming.
+          </p>
+        </div>
+
+        <div class="footer__social">
+          <h3 class="footer__title">Social Media</h3>
+
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://web.facebook.com/JDGP20/"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/juan_995/#"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/juan-gachancip%C3%A1-42284516a/"
+                target="_blank"
+                rel="noreferrer nofollow"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy"></p>
+    </footer>
+  </body>
+</html>
